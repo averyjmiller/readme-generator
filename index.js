@@ -6,76 +6,128 @@ const questions = [
   {
     type: 'input',
     message: 'What is the title of your project?',
-    name: 'title',
+    name: 'title'
   },
   {
     type: 'input',
     message: 'What is the description of your project?',
-    name: 'description',
+    name: 'description'
   },
   {
     type: 'input',
     message: 'What are the installation instructions of your project?',
-    name: 'installation',
+    name: 'installation'
   },
   {
     type: 'input',
     message: 'What is the usage information of your project?',
-    name: 'usage',
+    name: 'usage'
   },
   {
     type: 'input',
     message: 'What is the contribution guidelines of your project?',
-    name: 'contributing',
+    name: 'contributing'
   },
   {
     type: 'input',
     message: 'What are the test instructions of your project?',
-    name: 'tests',
+    name: 'tests'
   },
   {
     type: 'list',
     message: 'What is the licensing of your project?',
     name: 'license',
     choices: [
-      'No license',
-      'Academic Free License v3.0',
-      'Apache license 2.0',
-      'Artistic license 2.0',
-      'Boost Software License 1.0',
-      'BSD 2-clause',
-      'BSD 3-clause',
-      'BSD 3-clause Clear license',
-      'BSD Zero-Clause license',
-      'Creative Commons license family',
-      'Creative Commons Zero v1.0 Universal',
-      'Creative Commons Attribution 4.0',
-      'Creative Commons Attribution Share Alike 4.0',
-      'Do What The F*ck You Want To Public License',
-      'Educational Community License v2.0',
-      'Eclipse Public License 1.0',
-      'Eclipse Public License 2.0',
-      'European Union Public License 1.1',
-      'GNU Affero General Public License v3.0',
-      'GNU General Public License family',
-      'GNU General Public License v2.0',
-      'GNU General Public License v3.0',
-      'GNU Lesser General Public License family',
-      'GNU Lesser General Public License v2.1',
-      'GNU Lesser General Public License v3.0',
-      'ISC',
-      'LaTeX Project Public License v1.3c',
-      'Microsoft Public License',
-      'MIT',
-      'Mozilla Public License 2.0',
-      'Open Software License 3.0',
-      'PostgreSQL License',
-      'SIL Open Font License 1.1',
-      'University of Illinois/NCSA Open Source License',
-      'The Unlicense',
-      'zLib License'
-    ],
-  },
+      {
+        name: 'None',
+        value: null,
+      },
+      {
+        name: 'Apache license 2.0',
+        value: { 
+          SPDX_ID:'Apache-2.0', 
+          badge_ID: 'Apache_2.0-yellowgreen'
+        }
+      },
+      {
+        name: 'Boost Software License 1.0',
+        value: {
+          SPDX_ID: 'BSL-1.0',
+          badge_ID: 'Boost_1.0-lightblue'
+        }
+      },
+      {
+        name: 'BSD 2-clause',
+        value: { 
+          SPDX_ID: 'BSD-2-Clause',
+          badge_ID: 'BSD_2--Clause-orange'
+        }
+      },
+      {
+        name: 'BSD 3-clause',
+        value: {
+          SPDX_ID: 'BSD-3-Clause',
+          badge_ID: 'BSD_3--Clause-orange'
+        }
+      },
+      {
+        name: 'Creative Commons Zero v1.0 Universal',
+        value: {
+          SPDX_ID: 'CCO-1.0',
+          badge_ID: 'CC0_1.0-lightgrey'
+        }
+      },
+      {
+        name: 'Eclipse Public License 2.0',
+        value: {
+          SPDX_ID: 'EPL-2.0',
+          badge_ID: 'EPL_2.0-red'
+        }
+      },
+      {
+        name: 'GNU Affero General Public License v3.0',
+        value: {
+          SPDX_ID: 'AGPL-3.0-only',
+          badge_ID: 'AGPL_v3-blue'
+        }
+      },
+      {
+        name: 'GNU General Public License v2.0',
+        value: {
+          SPDX_ID: 'GPL-2.0',
+          badge_ID: 'GPL_v2-blue'
+        }
+      },
+      {
+        name: 'GNU Lesser General Public License v2.1',
+        value: {
+          SPDX_ID: 'LGPL-2.1',
+          badge_ID: 'LGPL_v2.1-blue'
+        }
+      },
+      {
+        name: 'MIT',
+        value: {
+          SPDX_ID: 'MIT',
+          badge_ID: 'MIT-yellow'
+        }
+      },
+      {
+        name: 'Mozilla Public License 2.0',
+        value: {
+          SPDX_ID: 'MPL-2.0',
+          badge_ID: 'MPL_2.0-brightgreen'
+        }
+      },
+      {
+        name: 'The Unlicense',
+        value: {
+          SPDX_ID: 'Unlicense',
+          badge_ID: 'Unlicense-blue'
+        }
+      }
+    ]
+  }
 ];
 
 function writeToFile(fileName, data) {
