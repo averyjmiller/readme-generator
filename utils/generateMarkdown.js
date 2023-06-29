@@ -47,8 +47,8 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
   ## Questions
-  https://github.com/${data.username}
-  Email me at ${data.email}
+  - https://github.com/${data.username}
+  - Email me at ${data.email}
   `.split("\n")
    .map(s => s.trim())
    .filter(Boolean)

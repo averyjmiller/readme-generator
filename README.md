@@ -21,5 +21,5 @@ N/A
 ## Tests
 N/A
 ## Questions
-https://github.com/averyjmiller
-Email me at averymiller2060@gmail.com
+- https://github.com/averyjmiller
+- Email me at averymiller2060@gmail.com
