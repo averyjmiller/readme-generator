@@ -14,6 +14,7 @@ Automatically generates a professional README file for your repository.
 - Run `npm i` to install Node dependencies.
 ## Usage
 Run `node index.js` to run the application.
+
 https://github.com/averyjmiller/readme-generator/assets/54604339/8ecf324d-17af-46da-b393-db65828c9f44
 ## License
 This repository is covered under MIT License.
