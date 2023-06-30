@@ -15,7 +15,7 @@ Automatically generates a professional README file for your repository.
 ## Usage
 Run `node index.js` to run the application.
 ---
-![Walk-through video](./assets/media/readme-generator.mp4)
+![Walk-through video](./assets/media/readme-generator.mov)
 ## License
 This repository is covered under MIT License.
 ## Contributing
