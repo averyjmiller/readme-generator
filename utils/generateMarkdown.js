@@ -24,37 +24,39 @@ function renderLicenseSection(license) {
 }
 
 function generateMarkdown(data) {
-  const content = 
-  `# ${data.title}
-  ${renderLicenseSection(data.license)}
-  ## Description
-  ${data.description}
-  ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  ## Installation
-  ${data.installation}
-  ## Usage
-  ${data.usage}
-  ## License
-  This repository is covered under ${data.license.name}.
-  ## Contributing
-  ${data.contributing}
-  ## Tests
-  ${data.tests}
-  ## Questions
-  - https://github.com/${data.username}
-  - Email me at ${data.email}
-  `.split("\n")
-   .map(s => s.trim())
-   .filter(Boolean)
-   .join("\n");
+  return `# ${data.title}
+${renderLicenseSection(data.license)}
 
-  return content;
+## Description
+${data.description}
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## License
+This repository is covered under ${data.license.name}.
+
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## Questions
+If you have any questions about the repo, open an issue 
+or contact me directly at ${data.email}. You can find 
+more of my work at [${data.username}](https://github.com/${data.username}).`
 }
 
 module.exports = generateMarkdown;

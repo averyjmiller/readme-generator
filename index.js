@@ -13,7 +13,7 @@ function init() {
   inquirer
   .prompt(questions)
   .then((answers) => {
-    writeToFile("example_README.md", answers);
+    writeToFile("./examples/README.md", answers);
   })
   .catch((err) => {
     if(err.isTtyError) {
